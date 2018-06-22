@@ -16,7 +16,7 @@ from wordcloud import WordCloud,ImageColorGenerator
 def data(name,tihao):
     # 打开数据库连接
 
-    db = pymysql.connect(host='10.187.1.157',user= 'root', passwd='Wlzx@12345678',db='new_db',charset='utf8')
+    db = pymysql.connect(host='10.187.1.157',user= 'root', passwd='***',db='***',charset='utf8')
 
     # 使用cursor()方法获取操作游标
     cursor = db.cursor()
@@ -47,7 +47,7 @@ def data(name,tihao):
 
 def get_words(txt,name,th):
     # 打开数据库连接
-    conn = pymysql.connect(host='localhost',user= 'root', passwd='root',db='xueqing' ,charset='utf8')
+    conn = pymysql.connect(host='localhost',user= 'root', passwd='***',db='xueqing' ,charset='utf8')
 
     # 使用cursor()方法获取操作游标
     #词权重
@@ -132,7 +132,7 @@ def get_words(txt,name,th):
 def run():
     xuexiaoname = []
     try:
-        conn = pymysql.connect(host='10.187.1.157',user= 'root', passwd='Wlzx@12345678',db='new_db',charset='utf8')
+        conn = pymysql.connect(host='10.187.1.157',user= 'root', passwd='***',db='***',charset='utf8')
         cur = conn.cursor()
         cur.execute('SHOW TABLES')
         #print(cur.fetchall()[len(cur.fetchall())-4][0])
