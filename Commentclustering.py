@@ -148,7 +148,7 @@ if __name__ == "__main__":
                             continue
                 else:
                     continue
-            sql = "INSERT INTO `2017Clustering`(`universityname`, `Questionnumber`, `category`, `content`,`years`,`id`,`count`) VALUES (%s,%s,%s,%s,%s,%s,%s)"
+            sql = "INSERT INTO `****`(`universityname`, `Questionnumber`, `category`, `content`,`years`,`id`,`count`) VALUES (%s,%s,%s,%s,%s,%s,%s)"
             print(sql)
             print(indata)
             cur = conn.cursor()
