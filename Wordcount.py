@@ -16,7 +16,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 def data(name):
     # 打开数据库连接
 
-    db = pymysql.connect(host='10.187.1.157',user= 'root', passwd='Wlzx@12345678',db='new_db',charset='utf8')
+    db = pymysql.connect(host='10.187.1.157',user= 'root', passwd='****',db='new_db',charset='utf8')
 
     # 使用cursor()方法获取操作游标
     cursor = db.cursor()
@@ -51,7 +51,7 @@ def data(name):
 def run():
     xuexiaoname = []
     try:
-        conn = pymysql.connect(host='10.187.1.157',user= 'root', passwd='Wlzx@12345678',db='new_db',charset='utf8')
+        conn = pymysql.connect(host='10.187.1.157',user= 'root', passwd='***',db='new_db',charset='utf8')
         cur = conn.cursor()
         cur.execute('SHOW TABLES')
         result = cur.fetchall()
@@ -61,7 +61,7 @@ def run():
         conn.close()
     except :
         print("Error: unable to fetch data")
-    conn = pymysql.connect(host='localhost', user='root', passwd='root', db='xueqing', charset='utf8')
+    conn = pymysql.connect(host='localhost', user='root', passwd='***', db='xueqing', charset='utf8')
     for i in range(len(xuexiaoname)):
         datalist = data(xuexiaoname[i])
         print(datalist)
